@@ -1,0 +1,39 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+
+# Large Datasets
+dataset/
+data/raw/
+data/leaf/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Local databases & uploads
+data/cache/
+data/uploads/
+data/*.db
+data/farmiq.db
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local helper shims
+powershell.bat

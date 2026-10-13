@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://YOUR-BACKEND-HOST/api/$1" },
+    { "source": "/uploads/(.*)", "destination": "https://YOUR-BACKEND-HOST/uploads/$1" },
+    { "source": "/((?!css/|js/|assets/|manifest.webmanifest|sw.js).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    { "source": "/js/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }] },
+    { "source": "/css/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }] },
+    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, immutable" }] },
+    { "source": "/sw.js", "headers": [{ "key": "Service-Worker-Allowed", "value": "/" }, { "key": "Cache-Control", "value": "no-cache" }] }
+  ]
+}

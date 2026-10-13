@@ -1,0 +1,525 @@
+{
+ "arch": "mobilenet_v3_small",
+ "size": 160,
+ "mean": [
+  0.485,
+  0.456,
+  0.406
+ ],
+ "std": [
+  0.229,
+  0.224,
+  0.225
+ ],
+ "labels": [
+  "apple__black_rot",
+  "apple__cedar_apple_rust",
+  "apple__healthy",
+  "apple__scab",
+  "bitter_gourd__downy_mildew",
+  "bitter_gourd__fusarium_wilt",
+  "bitter_gourd__healthy",
+  "bitter_gourd__mosaic_virus",
+  "bottle_gourd__anthracnose",
+  "bottle_gourd__downy_mildew",
+  "bottle_gourd__healthy",
+  "brinjal__cercospora_leaf_spot",
+  "brinjal__healthy",
+  "brinjal__leaf_curl_virus",
+  "brinjal__verticillium_wilt",
+  "cauliflower__black_rot",
+  "cauliflower__downy_mildew",
+  "cauliflower__healthy",
+  "cherry__healthy",
+  "cherry__powdery_mildew",
+  "citrus__black_spot",
+  "citrus__canker",
+  "citrus__greening",
+  "citrus__healthy",
+  "corn__common_rust",
+  "corn__gray_leaf_spot",
+  "corn__healthy",
+  "corn__northern_leaf_blight",
+  "cotton__bacterial_blight",
+  "cotton__fusarium_wilt",
+  "cotton__healthy",
+  "cotton__leaf_curl_virus",
+  "cucumber__anthracnose",
+  "cucumber__downy_mildew",
+  "cucumber__healthy",
+  "grape__black_rot",
+  "grape__esca",
+  "grape__healthy",
+  "grape__leaf_blight",
+  "other",
+  "peach__bacterial_spot",
+  "peach__healthy",
+  "pepper__bacterial_spot",
+  "pepper__healthy",
+  "potato__early_blight",
+  "potato__healthy",
+  "potato__late_blight",
+  "rice__bacterial_leaf_blight",
+  "rice__bacterial_leaf_streak",
+  "rice__bacterial_panicle_blight",
+  "rice__blast",
+  "rice__brown_spot",
+  "rice__dead_heart",
+  "rice__downy_mildew",
+  "rice__healthy",
+  "rice__hispa",
+  "rice__leaf_scald",
+  "rice__sheath_blight",
+  "rice__tungro",
+  "strawberry__healthy",
+  "strawberry__leaf_scorch",
+  "sugarcane__banded_chlorosis",
+  "sugarcane__brown_spot",
+  "sugarcane__grassy_shoot",
+  "sugarcane__healthy",
+  "sugarcane__mosaic",
+  "sugarcane__pokkah_boeng",
+  "sugarcane__red_rot",
+  "sugarcane__rust",
+  "sugarcane__sett_rot",
+  "sugarcane__smut",
+  "sugarcane__yellow_leaf",
+  "tomato__bacterial_spot",
+  "tomato__early_blight",
+  "tomato__healthy",
+  "tomato__late_blight",
+  "tomato__leaf_curl_virus",
+  "tomato__leaf_mold",
+  "tomato__mosaic_virus",
+  "tomato__septoria_leaf_spot",
+  "tomato__spider_mites",
+  "tomato__spotted_wilt",
+  "tomato__target_spot",
+  "tomato__yellow_leaf_curl_virus",
+  "wheat__aphid",
+  "wheat__black_rust",
+  "wheat__blast",
+  "wheat__brown_rust",
+  "wheat__common_root_rot",
+  "wheat__fusarium_head_blight",
+  "wheat__healthy",
+  "wheat__leaf_blight",
+  "wheat__mite",
+  "wheat__powdery_mildew",
+  "wheat__septoria",
+  "wheat__smut",
+  "wheat__stem_fly",
+  "wheat__tan_spot",
+  "wheat__yellow_rust"
+ ],
+ "val_acc": 0.9484,
+ "train_images": 130767,
+ "val_images": 17791,
+ "epochs": 4,
+ "per_class": {
+  "apple__black_rot": {
+   "n": 238,
+   "acc": 1.0
+  },
+  "apple__cedar_apple_rust": {
+   "n": 221,
+   "acc": 0.9638
+  },
+  "apple__healthy": {
+   "n": 110,
+   "acc": 0.9909
+  },
+  "apple__scab": {
+   "n": 253,
+   "acc": 0.9802
+  },
+  "bitter_gourd__downy_mildew": {
+   "n": 68,
+   "acc": 1.0
+  },
+  "bitter_gourd__fusarium_wilt": {
+   "n": 60,
+   "acc": 0.8667
+  },
+  "bitter_gourd__healthy": {
+   "n": 66,
+   "acc": 1.0
+  },
+  "bitter_gourd__mosaic_virus": {
+   "n": 72,
+   "acc": 0.9306
+  },
+  "bottle_gourd__anthracnose": {
+   "n": 72,
+   "acc": 1.0
+  },
+  "bottle_gourd__downy_mildew": {
+   "n": 82,
+   "acc": 1.0
+  },
+  "bottle_gourd__healthy": {
+   "n": 62,
+   "acc": 1.0
+  },
+  "brinjal__cercospora_leaf_spot": {
+   "n": 86,
+   "acc": 1.0
+  },
+  "brinjal__healthy": {
+   "n": 92,
+   "acc": 1.0
+  },
+  "brinjal__leaf_curl_virus": {
+   "n": 86,
+   "acc": 1.0
+  },
+  "brinjal__verticillium_wilt": {
+   "n": 87,
+   "acc": 1.0
+  },
+  "cauliflower__black_rot": {
+   "n": 67,
+   "acc": 1.0
+  },
+  "cauliflower__downy_mildew": {
+   "n": 61,
+   "acc": 1.0
+  },
+  "cauliflower__healthy": {
+   "n": 63,
+   "acc": 1.0
+  },
+  "cherry__healthy": {
+   "n": 383,
+   "acc": 0.9817
+  },
+  "cherry__powdery_mildew": {
+   "n": 378,
+   "acc": 1.0
+  },
+  "citrus__black_spot": {
+   "n": 37,
+   "acc": 0.9189
+  },
+  "citrus__canker": {
+   "n": 44,
+   "acc": 0.8636
+  },
+  "citrus__greening": {
+   "n": 519,
+   "acc": 0.9981
+  },
+  "citrus__healthy": {
+   "n": 15,
+   "acc": 0.9333
+  },
+  "corn__common_rust": {
+   "n": 242,
+   "acc": 0.9711
+  },
+  "corn__gray_leaf_spot": {
+   "n": 190,
+   "acc": 0.9421
+  },
+  "corn__healthy": {
+   "n": 223,
+   "acc": 1.0
+  },
+  "corn__northern_leaf_blight": {
+   "n": 251,
+   "acc": 0.9402
+  },
+  "cotton__bacterial_blight": {
+   "n": 53,
+   "acc": 0.9811
+  },
+  "cotton__fusarium_wilt": {
+   "n": 50,
+   "acc": 1.0
+  },
+  "cotton__healthy": {
+   "n": 51,
+   "acc": 0.9216
+  },
+  "cotton__leaf_curl_virus": {
+   "n": 46,
+   "acc": 1.0
+  },
+  "cucumber__anthracnose": {
+   "n": 64,
+   "acc": 1.0
+  },
+  "cucumber__downy_mildew": {
+   "n": 67,
+   "acc": 0.9851
+  },
+  "cucumber__healthy": {
+   "n": 63,
+   "acc": 1.0
+  },
+  "grape__black_rot": {
+   "n": 432,
+   "acc": 0.9815
+  },
+  "grape__esca": {
+   "n": 453,
+   "acc": 0.9978
+  },
+  "grape__healthy": {
+   "n": 312,
+   "acc": 0.984
+  },
+  "grape__leaf_blight": {
+   "n": 387,
+   "acc": 1.0
+  },
+  "other": {
+   "n": 1682,
+   "acc": 0.9822
+  },
+  "peach__bacterial_spot": {
+   "n": 519,
+   "acc": 0.9942
+  },
+  "peach__healthy": {
+   "n": 328,
+   "acc": 0.9848
+  },
+  "pepper__bacterial_spot": {
+   "n": 128,
+   "acc": 0.9453
+  },
+  "pepper__healthy": {
+   "n": 184,
+   "acc": 0.9837
+  },
+  "potato__early_blight": {
+   "n": 133,
+   "acc": 0.9474
+  },
+  "potato__healthy": {
+   "n": 18,
+   "acc": 1.0
+  },
+  "potato__late_blight": {
+   "n": 132,
+   "acc": 0.8939
+  },
+  "rice__bacterial_leaf_blight": {
+   "n": 400,
+   "acc": 0.9225
+  },
+  "rice__bacterial_leaf_streak": {
+   "n": 45,
+   "acc": 0.9333
+  },
+  "rice__bacterial_panicle_blight": {
+   "n": 40,
+   "acc": 0.95
+  },
+  "rice__blast": {
+   "n": 533,
+   "acc": 0.8724
+  },
+  "rice__brown_spot": {
+   "n": 462,
+   "acc": 0.9177
+  },
+  "rice__dead_heart": {
+   "n": 173,
+   "acc": 0.9653
+  },
+  "rice__downy_mildew": {
+   "n": 74,
+   "acc": 0.8784
+  },
+  "rice__healthy": {
+   "n": 368,
+   "acc": 0.9511
+  },
+  "rice__hispa": {
+   "n": 191,
+   "acc": 0.8848
+  },
+  "rice__leaf_scald": {
+   "n": 150,
+   "acc": 0.98
+  },
+  "rice__sheath_blight": {
+   "n": 151,
+   "acc": 0.9801
+  },
+  "rice__tungro": {
+   "n": 287,
+   "acc": 0.9443
+  },
+  "strawberry__healthy": {
+   "n": 339,
+   "acc": 0.9941
+  },
+  "strawberry__leaf_scorch": {
+   "n": 398,
+   "acc": 1.0
+  },
+  "sugarcane__banded_chlorosis": {
+   "n": 56,
+   "acc": 0.8036
+  },
+  "sugarcane__brown_spot": {
+   "n": 206,
+   "acc": 0.9466
+  },
+  "sugarcane__grassy_shoot": {
+   "n": 41,
+   "acc": 1.0
+  },
+  "sugarcane__healthy": {
+   "n": 114,
+   "acc": 0.9561
+  },
+  "sugarcane__mosaic": {
+   "n": 135,
+   "acc": 0.8741
+  },
+  "sugarcane__pokkah_boeng": {
+   "n": 35,
+   "acc": 0.9143
+  },
+  "sugarcane__red_rot": {
+   "n": 62,
+   "acc": 1.0
+  },
+  "sugarcane__rust": {
+   "n": 99,
+   "acc": 0.899
+  },
+  "sugarcane__sett_rot": {
+   "n": 78,
+   "acc": 1.0
+  },
+  "sugarcane__smut": {
+   "n": 37,
+   "acc": 0.6757
+  },
+  "sugarcane__yellow_leaf": {
+   "n": 203,
+   "acc": 0.8966
+  },
+  "tomato__bacterial_spot": {
+   "n": 339,
+   "acc": 0.9735
+  },
+  "tomato__early_blight": {
+   "n": 130,
+   "acc": 0.9154
+  },
+  "tomato__healthy": {
+   "n": 269,
+   "acc": 0.9777
+  },
+  "tomato__late_blight": {
+   "n": 242,
+   "acc": 0.9628
+  },
+  "tomato__leaf_curl_virus": {
+   "n": 90,
+   "acc": 1.0
+  },
+  "tomato__leaf_mold": {
+   "n": 125,
+   "acc": 0.904
+  },
+  "tomato__mosaic_virus": {
+   "n": 51,
+   "acc": 0.8627
+  },
+  "tomato__septoria_leaf_spot": {
+   "n": 230,
+   "acc": 0.9522
+  },
+  "tomato__spider_mites": {
+   "n": 201,
+   "acc": 1.0
+  },
+  "tomato__spotted_wilt": {
+   "n": 78,
+   "acc": 1.0
+  },
+  "tomato__target_spot": {
+   "n": 168,
+   "acc": 0.9286
+  },
+  "tomato__yellow_leaf_curl_virus": {
+   "n": 393,
+   "acc": 0.9873
+  },
+  "wheat__aphid": {
+   "n": 108,
+   "acc": 0.6481
+  },
+  "wheat__black_rust": {
+   "n": 69,
+   "acc": 0.6087
+  },
+  "wheat__blast": {
+   "n": 77,
+   "acc": 0.8052
+  },
+  "wheat__brown_rust": {
+   "n": 152,
+   "acc": 0.7303
+  },
+  "wheat__common_root_rot": {
+   "n": 73,
+   "acc": 0.7671
+  },
+  "wheat__fusarium_head_blight": {
+   "n": 73,
+   "acc": 0.9178
+  },
+  "wheat__healthy": {
+   "n": 120,
+   "acc": 0.925
+  },
+  "wheat__leaf_blight": {
+   "n": 101,
+   "acc": 0.505
+  },
+  "wheat__mite": {
+   "n": 96,
+   "acc": 0.5521
+  },
+  "wheat__powdery_mildew": {
+   "n": 129,
+   "acc": 0.8837
+  },
+  "wheat__septoria": {
+   "n": 137,
+   "acc": 0.9124
+  },
+  "wheat__smut": {
+   "n": 157,
+   "acc": 0.9108
+  },
+  "wheat__stem_fly": {
+   "n": 28,
+   "acc": 0.8214
+  },
+  "wheat__tan_spot": {
+   "n": 92,
+   "acc": 0.4239
+  },
+  "wheat__yellow_rust": {
+   "n": 156,
+   "acc": 0.9167
+  }
+ },
+ "ood": {
+  "mahalanobis_threshold": 27.08441115146898,
+  "in_dist_reject_rate_at_threshold": 0.015,
+  "ood_reject_rate_by_distance": 0.6278,
+  "ood_reject_rate_by_other_class": 0.9572,
+  "in_dist_false_other_rate": 0.0003
+ },
+ "other_index": 39
+}

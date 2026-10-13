@@ -1,0 +1,12 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+httpx==0.28.1
+pydantic==2.11.7
+python-dotenv>=1.0
+python-multipart==0.0.20
+sqlalchemy>=2.0.30
+pillow==11.3.0
+torch==2.7.1
+torchvision==0.22.1
+google-genai>=1.30
+gunicorn>=22.0

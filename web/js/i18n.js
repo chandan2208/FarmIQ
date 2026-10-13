@@ -1,0 +1,126 @@
+// Interface strings for the chrome and the key labels. The advisor answers in the same language.
+import { store } from './store.js';
+
+export const LANGS = { en: 'English', hi: 'हिन्दी', es: 'Español', fr: 'Français', de: 'Deutsch', it: 'Italiano' };
+
+const S = {
+  en: {
+    twin: 'Twin', crops: 'Crops', forecast: 'Forecast', scan: 'Scan', market: 'Prices', advisor: 'Advisor', circle: 'Circle', setPlot: 'Set plot', changePlot: 'Change plot',
+    fieldTwin: 'Field twin', crop: 'Crop', sowingDate: 'Sowing date', area: 'Area', irrigation: 'Irrigation', rainfed: 'Rain-fed', limited: 'Limited', full: 'Full',
+    nitrogen: 'Nitrogen applied', soilTexture: 'Soil texture', satellite: 'Satellite', runSeason: 'Run season', simulating: 'Simulating', readingSoil: 'Reading soil and climate for this plot (first time takes ~10 s)',
+    suitability: 'Suitability', netOn: 'net on', returnOnCost: 'return on cost', season: 'Season', limits: 'What limits the yield', risks: 'Risks', addCompare: 'Add to comparison', rankAll: 'Rank every crop', askAdvisor: 'Ask the advisor',
+    water: 'Water', nutrients: 'Nutrients', soilPh: 'Soil pH', temperature: 'Temperature', heatFlower: 'Heat at flowering', coldNights: 'Cold nights', texture: 'Soil texture',
+    play: 'Play', pause: 'Pause', day: 'Day', canopy: 'Canopy', soilWater: 'Soil water', rain: 'Rain', stress: 'Stress', temp: 'Temp', irrigate: 'Irrigate',
+    cropsRanked: 'Crops, ranked for this plot', cropsLede: 'Every crop grown in your region is simulated on your soil and climate at each plausible sowing date. The best window wins, and crops are ranked by risk-adjusted margin.',
+    bestSowing: 'Best sowing', window: 'Window', yieldCol: 'Yield', net: 'Net', adjusted: 'Risk-adjusted', irrigationCol: 'Irrigation', watchOut: 'Watch out for', allCategories: 'All categories',
+    forecastTitle: 'Forecast for this plot', forecastLede: 'Sixteen days from Open-Meteo, read the way a field needs it: rain, frost, workable days, spray windows, soil moisture by depth and disease pressure.',
+    now: 'Now', rain7: 'Rain, next 7 days', frostNights: 'Frost nights', firstFrost: 'first', none: 'none', workable: 'Workable days', nextWorkable: 'next', gdd: 'Growing degree days (base 10)', soilMoistureNow: 'Soil moisture now',
+    sprayWindows: 'Spray windows, next five days', diseasePressure: 'Disease pressure this week', dry: 'dry', noSpray: 'No spray window', spray: 'Spray', frost: 'Frost',
+    pricesTitle: 'Prices', mandiTitle: 'Mandi prices, today', referenceTitle: 'Reference prices', state: 'State', commodity: 'Commodity', loadPrices: "Load today's prices",
+    advisorTitle: 'Advisor', advisorLede: "Answers are grounded in your plot: soil, forecast, the current simulation and prices. It quotes the numbers it used.", ask: 'Ask', askPlaceholder: 'Ask about your plot', setPlotFirst: 'Set a plot first, then ask',
+    language: 'Language', noPlot: 'No plot set', needPlot: 'Set your plot location first. Everything here is computed for one specific field.', setLocation: 'Set plot location',
+    heroTitle: 'Grow the season before you sow it.', heroLede: 'FarmIQ builds a digital twin of your field from satellite soil maps and the real forecast, then simulates the whole season day by day for any crop you are weighing. You see the yield, the water it needs, the money it makes and the week it fails, before you spend anything.',
+    buildTwin: 'Build my twin', demoPlot: 'Try a demo field',
+  },
+  hi: {
+    twin: 'खेत', crops: 'फ़सलें', forecast: 'मौसम', scan: 'पत्ती जाँच', market: 'मंडी', advisor: 'सलाहकार', circle: 'समुदाय', setPlot: 'खेत चुनें', changePlot: 'खेत बदलें',
+    fieldTwin: 'खेत का डिजिटल रूप', crop: 'फ़सल', sowingDate: 'बुआई की तारीख', area: 'क्षेत्रफल', irrigation: 'सिंचाई', rainfed: 'बारिश पर', limited: 'सीमित', full: 'पूरी',
+    nitrogen: 'नाइट्रोजन दिया', soilTexture: 'मिट्टी का प्रकार', satellite: 'उपग्रह', runSeason: 'सीज़न चलाएँ', simulating: 'गणना हो रही है', readingSoil: 'इस खेत की मिट्टी और जलवायु पढ़ी जा रही है (पहली बार ~10 सेकंड)',
+    suitability: 'उपयुक्तता', netOn: 'शुद्ध लाभ', returnOnCost: 'लागत पर लाभ', season: 'सीज़न', limits: 'उपज को क्या रोकता है', risks: 'जोखिम', addCompare: 'तुलना में जोड़ें', rankAll: 'सभी फ़सलें रैंक करें', askAdvisor: 'सलाहकार से पूछें',
+    water: 'पानी', nutrients: 'पोषक तत्व', soilPh: 'मिट्टी pH', temperature: 'तापमान', heatFlower: 'फूल आने पर गर्मी', coldNights: 'ठंडी रातें', texture: 'मिट्टी',
+    play: 'चलाएँ', pause: 'रोकें', day: 'दिन', canopy: 'पौधे', soilWater: 'मिट्टी में नमी', rain: 'बारिश', stress: 'तनाव', temp: 'तापमान', irrigate: 'सिंचाई करें',
+    cropsRanked: 'इस खेत के लिए फ़सलों की रैंकिंग', cropsLede: 'आपके क्षेत्र की हर फ़सल को आपकी मिट्टी और जलवायु पर हर संभव बुआई तारीख के लिए चलाया गया है। सबसे अच्छी बुआई खिड़की चुनी गई है और फ़सलें जोखिम-समायोजित लाभ से क्रमबद्ध हैं।',
+    bestSowing: 'सर्वोत्तम बुआई', window: 'खिड़की', yieldCol: 'उपज', net: 'शुद्ध', adjusted: 'जोखिम-समायोजित', irrigationCol: 'सिंचाई', watchOut: 'ध्यान दें', allCategories: 'सभी श्रेणियाँ',
+    forecastTitle: 'इस खेत का मौसम', forecastLede: 'सोलह दिन का पूर्वानुमान, खेत की भाषा में: बारिश, पाला, काम करने लायक दिन, छिड़काव का समय, गहराई के अनुसार नमी और रोग दबाव।',
+    now: 'अभी', rain7: 'अगले 7 दिन बारिश', frostNights: 'पाले की रातें', firstFrost: 'पहली', none: 'कोई नहीं', workable: 'काम लायक दिन', nextWorkable: 'अगला', gdd: 'वृद्धि डिग्री दिन (आधार 10)', soilMoistureNow: 'मिट्टी में नमी अभी',
+    sprayWindows: 'अगले पाँच दिन छिड़काव का समय', diseasePressure: 'इस सप्ताह रोग दबाव', dry: 'सूखा', noSpray: 'छिड़काव लायक समय नहीं', spray: 'छिड़काव', frost: 'पाला',
+    pricesTitle: 'भाव', mandiTitle: 'आज के मंडी भाव', referenceTitle: 'संदर्भ भाव', state: 'राज्य', commodity: 'जिंस', loadPrices: 'आज के भाव देखें',
+    advisorTitle: 'सलाहकार', advisorLede: 'जवाब आपके खेत पर आधारित हैं: मिट्टी, मौसम, चल रही गणना और भाव। यह जिन आँकड़ों का उपयोग करता है उन्हें बताता है।', ask: 'पूछें', askPlaceholder: 'अपने खेत के बारे में पूछें', setPlotFirst: 'पहले खेत चुनें, फिर पूछें',
+    language: 'भाषा', noPlot: 'खेत चुना नहीं है', needPlot: 'पहले खेत का स्थान चुनें। यहाँ सब कुछ एक खास खेत के लिए गिना जाता है।', setLocation: 'खेत का स्थान चुनें',
+    heroTitle: 'बोने से पहले पूरा सीज़न देख लें।', heroLede: 'FarmIQ उपग्रह मिट्टी नक्शों और असली मौसम पूर्वानुमान से आपके खेत का डिजिटल रूप बनाता है, फिर किसी भी फ़सल के लिए पूरा सीज़न दिन-ब-दिन चलाकर दिखाता है। उपज, पानी, कमाई और वह हफ़्ता जब फ़सल बिगड़ेगी, सब पहले दिख जाता है।',
+    buildTwin: 'मेरा खेत बनाएँ', demoPlot: 'नमूना खेत देखें',
+  },
+  es: {
+    twin: 'Parcela', crops: 'Cultivos', forecast: 'Pronóstico', scan: 'Hoja', market: 'Precios', advisor: 'Asesor', circle: 'Comunidad', setPlot: 'Fijar parcela', changePlot: 'Cambiar parcela',
+    fieldTwin: 'Gemelo de la parcela', crop: 'Cultivo', sowingDate: 'Fecha de siembra', area: 'Superficie', irrigation: 'Riego', rainfed: 'Secano', limited: 'Limitado', full: 'Completo',
+    nitrogen: 'Nitrógeno aplicado', soilTexture: 'Textura del suelo', satellite: 'Satélite', runSeason: 'Simular campaña', simulating: 'Simulando', readingSoil: 'Leyendo suelo y clima de esta parcela (la primera vez tarda ~10 s)',
+    suitability: 'Aptitud', netOn: 'neto en', returnOnCost: 'retorno sobre costes', season: 'Campaña', limits: 'Qué limita el rendimiento', risks: 'Riesgos', addCompare: 'Añadir a comparación', rankAll: 'Clasificar cultivos', askAdvisor: 'Preguntar al asesor',
+    water: 'Agua', nutrients: 'Nutrientes', soilPh: 'pH del suelo', temperature: 'Temperatura', heatFlower: 'Calor en floración', coldNights: 'Noches frías', texture: 'Textura',
+    play: 'Reproducir', pause: 'Pausa', day: 'Día', canopy: 'Cubierta', soilWater: 'Agua en suelo', rain: 'Lluvia', stress: 'Estrés', temp: 'Temp', irrigate: 'Regar',
+    cropsRanked: 'Cultivos clasificados para esta parcela', cropsLede: 'Cada cultivo de su región se simula sobre su suelo y clima en cada fecha de siembra plausible. Gana la mejor ventana y se ordena por margen ajustado al riesgo.',
+    bestSowing: 'Mejor siembra', window: 'Ventana', yieldCol: 'Rendimiento', net: 'Neto', adjusted: 'Ajustado al riesgo', irrigationCol: 'Riego', watchOut: 'Atención a', allCategories: 'Todas las categorías',
+    forecastTitle: 'Pronóstico para esta parcela', forecastLede: 'Dieciséis días de Open-Meteo leídos como los necesita el campo: lluvia, heladas, días laborables, ventanas de pulverización, humedad por profundidad y presión de enfermedades.',
+    now: 'Ahora', rain7: 'Lluvia, próximos 7 días', frostNights: 'Noches de helada', firstFrost: 'primera', none: 'ninguna', workable: 'Días laborables', nextWorkable: 'próximo', gdd: 'Grados-día (base 10)', soilMoistureNow: 'Humedad del suelo ahora',
+    sprayWindows: 'Ventanas de pulverización, cinco días', diseasePressure: 'Presión de enfermedades esta semana', dry: 'seco', noSpray: 'Sin ventana', spray: 'Pulverizar', frost: 'Helada',
+    pricesTitle: 'Precios', mandiTitle: 'Precios de mercado, hoy', referenceTitle: 'Precios de referencia', state: 'Estado', commodity: 'Producto', loadPrices: 'Cargar precios de hoy',
+    advisorTitle: 'Asesor', advisorLede: 'Las respuestas se basan en su parcela: suelo, pronóstico, simulación actual y precios. Cita las cifras que usa.', ask: 'Preguntar', askPlaceholder: 'Pregunte sobre su parcela', setPlotFirst: 'Fije una parcela primero',
+    language: 'Idioma', noPlot: 'Sin parcela', needPlot: 'Fije primero la ubicación de su parcela. Todo aquí se calcula para un campo concreto.', setLocation: 'Fijar ubicación',
+    heroTitle: 'Cultive la campaña antes de sembrarla.', heroLede: 'FarmIQ construye un gemelo digital de su campo a partir de mapas de suelo por satélite y el pronóstico real, y simula toda la campaña día a día para cualquier cultivo que esté valorando. Ve el rendimiento, el agua, el dinero y la semana en que falla, antes de gastar nada.',
+    buildTwin: 'Crear mi gemelo', demoPlot: 'Probar un campo de ejemplo',
+  },
+  fr: {
+    twin: 'Parcelle', crops: 'Cultures', forecast: 'Météo', scan: 'Feuille', market: 'Prix', advisor: 'Conseiller', circle: 'Communauté', setPlot: 'Choisir la parcelle', changePlot: 'Changer de parcelle',
+    fieldTwin: 'Jumeau de la parcelle', crop: 'Culture', sowingDate: 'Date de semis', area: 'Surface', irrigation: 'Irrigation', rainfed: 'Pluvial', limited: 'Limitée', full: 'Complète',
+    nitrogen: 'Azote apporté', soilTexture: 'Texture du sol', satellite: 'Satellite', runSeason: 'Simuler la campagne', simulating: 'Simulation', readingSoil: 'Lecture du sol et du climat de la parcelle (~10 s la première fois)',
+    suitability: 'Aptitude', netOn: 'net sur', returnOnCost: 'retour sur coûts', season: 'Campagne', limits: 'Ce qui limite le rendement', risks: 'Risques', addCompare: 'Ajouter à la comparaison', rankAll: 'Classer les cultures', askAdvisor: 'Demander au conseiller',
+    water: 'Eau', nutrients: 'Nutriments', soilPh: 'pH du sol', temperature: 'Température', heatFlower: 'Chaleur à la floraison', coldNights: 'Nuits froides', texture: 'Texture',
+    play: 'Lecture', pause: 'Pause', day: 'Jour', canopy: 'Couvert', soilWater: 'Eau du sol', rain: 'Pluie', stress: 'Stress', temp: 'Temp', irrigate: 'Irriguer',
+    cropsRanked: 'Cultures classées pour cette parcelle', cropsLede: 'Chaque culture de votre région est simulée sur votre sol et votre climat à chaque date de semis plausible. La meilleure fenêtre l’emporte, et les cultures sont classées par marge ajustée au risque.',
+    bestSowing: 'Meilleur semis', window: 'Fenêtre', yieldCol: 'Rendement', net: 'Net', adjusted: 'Ajusté au risque', irrigationCol: 'Irrigation', watchOut: 'Attention à', allCategories: 'Toutes catégories',
+    forecastTitle: 'Météo pour cette parcelle', forecastLede: 'Seize jours d’Open-Meteo lus comme le champ en a besoin : pluie, gel, jours praticables, fenêtres de traitement, humidité par profondeur et pression des maladies.',
+    now: 'Maintenant', rain7: 'Pluie, 7 prochains jours', frostNights: 'Nuits de gel', firstFrost: 'première', none: 'aucune', workable: 'Jours praticables', nextWorkable: 'prochain', gdd: 'Degrés-jours (base 10)', soilMoistureNow: 'Humidité du sol',
+    sprayWindows: 'Fenêtres de traitement, cinq jours', diseasePressure: 'Pression des maladies cette semaine', dry: 'sec', noSpray: 'Pas de fenêtre', spray: 'Traiter', frost: 'Gel',
+    pricesTitle: 'Prix', mandiTitle: 'Prix du marché, aujourd’hui', referenceTitle: 'Prix de référence', state: 'État', commodity: 'Produit', loadPrices: 'Charger les prix du jour',
+    advisorTitle: 'Conseiller', advisorLede: 'Les réponses s’appuient sur votre parcelle : sol, météo, simulation en cours et prix. Il cite les chiffres utilisés.', ask: 'Demander', askPlaceholder: 'Posez une question sur votre parcelle', setPlotFirst: 'Choisissez d’abord une parcelle',
+    language: 'Langue', noPlot: 'Aucune parcelle', needPlot: 'Choisissez d’abord l’emplacement de votre parcelle. Tout ici est calculé pour un champ précis.', setLocation: 'Choisir l’emplacement',
+    heroTitle: 'Cultivez la campagne avant de la semer.', heroLede: 'FarmIQ construit un jumeau numérique de votre champ à partir des cartes de sol satellitaires et de la vraie météo, puis simule toute la campagne jour par jour pour chaque culture envisagée. Vous voyez le rendement, l’eau, l’argent et la semaine où ça casse, avant de dépenser quoi que ce soit.',
+    buildTwin: 'Créer mon jumeau', demoPlot: 'Essayer un champ démo',
+  },
+  de: {
+    twin: 'Schlag', crops: 'Kulturen', forecast: 'Wetter', scan: 'Blatt', market: 'Preise', advisor: 'Berater', circle: 'Gemeinschaft', setPlot: 'Schlag wählen', changePlot: 'Schlag ändern',
+    fieldTwin: 'Digitaler Schlag', crop: 'Kultur', sowingDate: 'Aussaattermin', area: 'Fläche', irrigation: 'Bewässerung', rainfed: 'Regenfeld', limited: 'Begrenzt', full: 'Voll',
+    nitrogen: 'Stickstoffgabe', soilTexture: 'Bodenart', satellite: 'Satellit', runSeason: 'Saison simulieren', simulating: 'Simulation läuft', readingSoil: 'Boden und Klima des Schlags werden gelesen (beim ersten Mal ~10 s)',
+    suitability: 'Eignung', netOn: 'netto auf', returnOnCost: 'Rendite auf Kosten', season: 'Saison', limits: 'Was den Ertrag begrenzt', risks: 'Risiken', addCompare: 'Zum Vergleich', rankAll: 'Alle Kulturen bewerten', askAdvisor: 'Berater fragen',
+    water: 'Wasser', nutrients: 'Nährstoffe', soilPh: 'Boden-pH', temperature: 'Temperatur', heatFlower: 'Hitze zur Blüte', coldNights: 'Kalte Nächte', texture: 'Bodenart',
+    play: 'Abspielen', pause: 'Pause', day: 'Tag', canopy: 'Bestand', soilWater: 'Bodenwasser', rain: 'Regen', stress: 'Stress', temp: 'Temp', irrigate: 'Bewässern',
+    cropsRanked: 'Kulturen, bewertet für diesen Schlag', cropsLede: 'Jede Kultur Ihrer Region wird auf Ihrem Boden und Klima zu jedem plausiblen Aussaattermin simuliert. Das beste Zeitfenster gewinnt, sortiert nach risikobereinigtem Deckungsbeitrag.',
+    bestSowing: 'Beste Aussaat', window: 'Zeitfenster', yieldCol: 'Ertrag', net: 'Netto', adjusted: 'Risikobereinigt', irrigationCol: 'Bewässerung', watchOut: 'Achtung', allCategories: 'Alle Kategorien',
+    forecastTitle: 'Wetter für diesen Schlag', forecastLede: 'Sechzehn Tage von Open-Meteo, gelesen wie das Feld es braucht: Regen, Frost, befahrbare Tage, Spritzfenster, Bodenfeuchte nach Tiefe und Krankheitsdruck.',
+    now: 'Jetzt', rain7: 'Regen, nächste 7 Tage', frostNights: 'Frostnächte', firstFrost: 'erste', none: 'keine', workable: 'Befahrbare Tage', nextWorkable: 'nächster', gdd: 'Wachstumsgradtage (Basis 10)', soilMoistureNow: 'Bodenfeuchte jetzt',
+    sprayWindows: 'Spritzfenster, fünf Tage', diseasePressure: 'Krankheitsdruck diese Woche', dry: 'trocken', noSpray: 'Kein Spritzfenster', spray: 'Spritzen', frost: 'Frost',
+    pricesTitle: 'Preise', mandiTitle: 'Marktpreise heute', referenceTitle: 'Referenzpreise', state: 'Bundesstaat', commodity: 'Produkt', loadPrices: 'Heutige Preise laden',
+    advisorTitle: 'Berater', advisorLede: 'Antworten beruhen auf Ihrem Schlag: Boden, Wetter, aktuelle Simulation und Preise. Die verwendeten Zahlen werden genannt.', ask: 'Fragen', askPlaceholder: 'Frage zum Schlag stellen', setPlotFirst: 'Zuerst einen Schlag wählen',
+    language: 'Sprache', noPlot: 'Kein Schlag', needPlot: 'Wählen Sie zuerst den Standort Ihres Schlags. Alles hier wird für ein konkretes Feld berechnet.', setLocation: 'Standort wählen',
+    heroTitle: 'Bauen Sie die Saison an, bevor Sie säen.', heroLede: 'FarmIQ baut aus Satelliten-Bodenkarten und der echten Wettervorhersage einen digitalen Zwilling Ihres Feldes und simuliert die ganze Saison Tag für Tag für jede Kultur, die Sie erwägen. Sie sehen Ertrag, Wasserbedarf, Geld und die Woche, in der es schiefgeht, bevor Sie etwas ausgeben.',
+    buildTwin: 'Meinen Zwilling anlegen', demoPlot: 'Demo-Feld ausprobieren',
+  },
+  it: {
+    twin: 'Campo', crops: 'Colture', forecast: 'Meteo', scan: 'Foglia', market: 'Prezzi', advisor: 'Consulente', circle: 'Comunità', setPlot: 'Scegli campo', changePlot: 'Cambia campo',
+    fieldTwin: 'Gemello del campo', crop: 'Coltura', sowingDate: 'Data di semina', area: 'Superficie', irrigation: 'Irrigazione', rainfed: 'Asciutto', limited: 'Limitata', full: 'Completa',
+    nitrogen: 'Azoto apportato', soilTexture: 'Tessitura', satellite: 'Satellite', runSeason: 'Simula stagione', simulating: 'Simulazione', readingSoil: 'Lettura di suolo e clima del campo (~10 s la prima volta)',
+    suitability: 'Idoneità', netOn: 'netto su', returnOnCost: 'ritorno sui costi', season: 'Stagione', limits: 'Cosa limita la resa', risks: 'Rischi', addCompare: 'Aggiungi al confronto', rankAll: 'Classifica colture', askAdvisor: 'Chiedi al consulente',
+    water: 'Acqua', nutrients: 'Nutrienti', soilPh: 'pH del suolo', temperature: 'Temperatura', heatFlower: 'Caldo in fioritura', coldNights: 'Notti fredde', texture: 'Tessitura',
+    play: 'Avvia', pause: 'Pausa', day: 'Giorno', canopy: 'Copertura', soilWater: 'Acqua nel suolo', rain: 'Pioggia', stress: 'Stress', temp: 'Temp', irrigate: 'Irrigare',
+    cropsRanked: 'Colture classificate per questo campo', cropsLede: 'Ogni coltura della vostra regione è simulata sul vostro suolo e clima a ogni data di semina plausibile. Vince la finestra migliore, ordinata per margine corretto per il rischio.',
+    bestSowing: 'Semina migliore', window: 'Finestra', yieldCol: 'Resa', net: 'Netto', adjusted: 'Corretto per rischio', irrigationCol: 'Irrigazione', watchOut: 'Attenzione a', allCategories: 'Tutte le categorie',
+    forecastTitle: 'Meteo per questo campo', forecastLede: 'Sedici giorni di Open-Meteo letti come serve al campo: pioggia, gelo, giorni lavorabili, finestre di trattamento, umidità per profondità e pressione delle malattie.',
+    now: 'Ora', rain7: 'Pioggia, prossimi 7 giorni', frostNights: 'Notti di gelo', firstFrost: 'prima', none: 'nessuna', workable: 'Giorni lavorabili', nextWorkable: 'prossimo', gdd: 'Gradi-giorno (base 10)', soilMoistureNow: 'Umidità del suolo',
+    sprayWindows: 'Finestre di trattamento, cinque giorni', diseasePressure: 'Pressione malattie questa settimana', dry: 'asciutto', noSpray: 'Nessuna finestra', spray: 'Trattare', frost: 'Gelo',
+    pricesTitle: 'Prezzi', mandiTitle: 'Prezzi di mercato, oggi', referenceTitle: 'Prezzi di riferimento', state: 'Stato', commodity: 'Prodotto', loadPrices: 'Carica i prezzi di oggi',
+    advisorTitle: 'Consulente', advisorLede: 'Le risposte si basano sul vostro campo: suolo, meteo, simulazione corrente e prezzi. Cita i numeri usati.', ask: 'Chiedi', askPlaceholder: 'Chiedi del tuo campo', setPlotFirst: 'Scegli prima un campo',
+    language: 'Lingua', noPlot: 'Nessun campo', needPlot: 'Scegli prima la posizione del campo. Tutto qui è calcolato per un campo specifico.', setLocation: 'Scegli posizione',
+    heroTitle: 'Coltiva la stagione prima di seminarla.', heroLede: 'FarmIQ costruisce un gemello digitale del tuo campo da mappe satellitari del suolo e dal meteo reale, poi simula l’intera stagione giorno per giorno per ogni coltura che stai valutando. Vedi resa, acqua, denaro e la settimana in cui va male, prima di spendere.',
+    buildTwin: 'Crea il mio gemello', demoPlot: 'Prova un campo demo',
+  },
+};
+
+export function t(key) {
+  const lang = store.get().lang || 'en';
+  return (S[lang] && S[lang][key]) || S.en[key] || key;
+}
+
+export function detectLang(regionLangs) {
+  const nav = (navigator.language || 'en').slice(0, 2);
+  if (S[nav] && (!regionLangs || regionLangs.includes(nav))) return nav;
+  return (regionLangs && regionLangs[0]) || 'en';
+}

@@ -1,0 +1,1049 @@
+{
+ "_doc": "Regional profiles. prices_t = typical farm-gate price per tonne in local currency (2025 season, curated from USDA NASS, AHDB, Eurostat and Agmarknet/MSP); costs_ha = typical variable plus operating cost per hectare; yield_potential = attainable yield t/ha under good management in that region. Countries map to a region by ISO code; anything unmapped uses WORLD.",
+ "countries": {
+  "IN": "IN",
+  "NP": "IN",
+  "BD": "IN",
+  "LK": "IN",
+  "PK": "IN",
+  "US": "US",
+  "CA": "US",
+  "MX": "US",
+  "GB": "UK",
+  "IE": "UK",
+  "AT": "EU",
+  "BE": "EU",
+  "BG": "EU",
+  "HR": "EU",
+  "CY": "EU",
+  "CZ": "EU",
+  "DK": "EU",
+  "EE": "EU",
+  "FI": "EU",
+  "FR": "EU",
+  "DE": "EU",
+  "GR": "EU",
+  "HU": "EU",
+  "IT": "EU",
+  "LV": "EU",
+  "LT": "EU",
+  "LU": "EU",
+  "MT": "EU",
+  "NL": "EU",
+  "PL": "EU",
+  "PT": "EU",
+  "RO": "EU",
+  "SK": "EU",
+  "SI": "EU",
+  "ES": "EU",
+  "SE": "EU",
+  "CH": "EU",
+  "NO": "EU"
+ },
+ "regions": {
+  "IN": {
+   "name": "India",
+   "currency": "INR",
+   "symbol": "₹",
+   "locale": "en-IN",
+   "units": "india",
+   "languages": [
+    "en",
+    "hi"
+   ],
+   "seasons": {
+    "kharif": [
+     6,
+     7,
+     8
+    ],
+    "rabi": [
+     10,
+     11,
+     12
+    ],
+    "zaid": [
+     2,
+     3,
+     4
+    ]
+   },
+   "price_unit": "quintal",
+   "crops": [
+    "rice",
+    "wheat",
+    "maize",
+    "bajra",
+    "jowar",
+    "barley",
+    "arhar",
+    "chickpea",
+    "lentil",
+    "pea",
+    "soybean",
+    "groundnut",
+    "mustard",
+    "sesame",
+    "sunflower",
+    "safflower",
+    "cotton",
+    "jute",
+    "sugarcane",
+    "potato",
+    "onion",
+    "tomato",
+    "brinjal",
+    "okra",
+    "cabbage",
+    "cauliflower",
+    "carrot",
+    "spinach",
+    "chillies",
+    "turmeric",
+    "guar"
+   ],
+   "sources": [
+    "Agmarknet daily mandi prices (data.gov.in)",
+    "MSP 2025-26, Ministry of Agriculture",
+    "ICAR package of practices for costs"
+   ],
+   "sowing": {
+    "rice": [
+     6,
+     7,
+     1
+    ],
+    "wheat": [
+     11,
+     12
+    ],
+    "maize": [
+     6,
+     7,
+     10,
+     2
+    ],
+    "bajra": [
+     6,
+     7,
+     3
+    ],
+    "jowar": [
+     6,
+     7,
+     10
+    ],
+    "barley": [
+     11
+    ],
+    "arhar": [
+     6,
+     7
+    ],
+    "chickpea": [
+     10,
+     11
+    ],
+    "lentil": [
+     10,
+     11
+    ],
+    "pea": [
+     10,
+     11
+    ],
+    "soybean": [
+     6,
+     7
+    ],
+    "groundnut": [
+     6,
+     7,
+     1
+    ],
+    "mustard": [
+     10
+    ],
+    "sesame": [
+     6,
+     7,
+     2
+    ],
+    "sunflower": [
+     1,
+     2,
+     6,
+     9
+    ],
+    "safflower": [
+     10
+    ],
+    "cotton": [
+     4,
+     5,
+     6
+    ],
+    "jute": [
+     3,
+     4
+    ],
+    "sugarcane": [
+     2,
+     3,
+     10
+    ],
+    "potato": [
+     10,
+     11
+    ],
+    "onion": [
+     6,
+     11,
+     12
+    ],
+    "tomato": [
+     6,
+     7,
+     9,
+     10,
+     1
+    ],
+    "brinjal": [
+     6,
+     7,
+     10,
+     2
+    ],
+    "okra": [
+     2,
+     3,
+     6,
+     7
+    ],
+    "cabbage": [
+     9,
+     10
+    ],
+    "cauliflower": [
+     6,
+     8,
+     10
+    ],
+    "carrot": [
+     9,
+     10,
+     11
+    ],
+    "spinach": [
+     9,
+     10,
+     11,
+     1,
+     2
+    ],
+    "chillies": [
+     6,
+     7,
+     10
+    ],
+    "turmeric": [
+     4,
+     5,
+     6
+    ],
+    "guar": [
+     7
+    ]
+   }
+  },
+  "US": {
+   "name": "United States",
+   "currency": "USD",
+   "symbol": "$",
+   "locale": "en-US",
+   "units": "us",
+   "languages": [
+    "en",
+    "es"
+   ],
+   "seasons": {
+    "spring": [
+     3,
+     4,
+     5
+    ],
+    "summer": [
+     6,
+     7
+    ],
+    "fall": [
+     9,
+     10,
+     11
+    ]
+   },
+   "price_unit": "bushel",
+   "crops": [
+    "maize",
+    "soybean",
+    "wheat",
+    "cotton",
+    "jowar",
+    "alfalfa",
+    "oats",
+    "barley",
+    "sunflower",
+    "canola",
+    "dry_beans",
+    "potato",
+    "rice",
+    "sugar_beet",
+    "groundnut",
+    "tomato",
+    "onion",
+    "sweet_corn",
+    "rye",
+    "chickpea",
+    "lentil",
+    "pea"
+   ],
+   "prices_t": {
+    "maize": 172,
+    "soybean": 385,
+    "wheat": 205,
+    "cotton": 1540,
+    "jowar": 160,
+    "alfalfa": 200,
+    "oats": 240,
+    "barley": 210,
+    "sunflower": 480,
+    "canola": 470,
+    "dry_beans": 820,
+    "potato": 230,
+    "rice": 330,
+    "sugar_beet": 52,
+    "groundnut": 560,
+    "tomato": 115,
+    "onion": 380,
+    "sweet_corn": 280,
+    "rye": 230,
+    "chickpea": 650,
+    "lentil": 600,
+    "pea": 330
+   },
+   "costs_ha": {
+    "maize": 1950,
+    "soybean": 1250,
+    "wheat": 900,
+    "cotton": 2300,
+    "jowar": 850,
+    "alfalfa": 1200,
+    "oats": 750,
+    "barley": 800,
+    "sunflower": 900,
+    "canola": 950,
+    "dry_beans": 1500,
+    "potato": 9500,
+    "rice": 3200,
+    "sugar_beet": 3000,
+    "groundnut": 2400,
+    "tomato": 12000,
+    "onion": 9000,
+    "sweet_corn": 2800,
+    "rye": 700,
+    "chickpea": 900,
+    "lentil": 800,
+    "pea": 850
+   },
+   "yield_potential": {
+    "maize": 12.5,
+    "soybean": 4.2,
+    "wheat": 5.0,
+    "cotton": 2.4,
+    "jowar": 5.5,
+    "alfalfa": 18.0,
+    "oats": 3.8,
+    "barley": 4.8,
+    "sunflower": 2.4,
+    "canola": 2.6,
+    "dry_beans": 2.6,
+    "potato": 50.0,
+    "rice": 8.5,
+    "sugar_beet": 75.0,
+    "groundnut": 4.5,
+    "tomato": 90.0,
+    "onion": 60.0,
+    "sweet_corn": 18.0,
+    "rye": 3.5,
+    "chickpea": 2.2,
+    "lentil": 1.8,
+    "pea": 2.8
+   },
+   "sources": [
+    "USDA NASS Agricultural Prices, 2025",
+    "USDA ERS Commodity Costs and Returns",
+    "state extension crop budgets"
+   ],
+   "sowing": {
+    "maize": [
+     4,
+     5
+    ],
+    "soybean": [
+     5,
+     6
+    ],
+    "wheat": [
+     9,
+     10,
+     3
+    ],
+    "cotton": [
+     4,
+     5
+    ],
+    "jowar": [
+     5,
+     6
+    ],
+    "alfalfa": [
+     4,
+     8
+    ],
+    "oats": [
+     3,
+     4,
+     9
+    ],
+    "barley": [
+     3,
+     4,
+     9
+    ],
+    "sunflower": [
+     5,
+     6
+    ],
+    "canola": [
+     9,
+     4
+    ],
+    "dry_beans": [
+     5,
+     6
+    ],
+    "potato": [
+     3,
+     4
+    ],
+    "rice": [
+     4,
+     5
+    ],
+    "sugar_beet": [
+     3,
+     4
+    ],
+    "groundnut": [
+     4,
+     5
+    ],
+    "tomato": [
+     4,
+     5
+    ],
+    "onion": [
+     3,
+     4,
+     10
+    ],
+    "sweet_corn": [
+     4,
+     5,
+     6
+    ],
+    "rye": [
+     9,
+     10
+    ],
+    "chickpea": [
+     3,
+     4
+    ],
+    "lentil": [
+     3,
+     4
+    ],
+    "pea": [
+     3,
+     4
+    ]
+   }
+  },
+  "UK": {
+   "name": "United Kingdom",
+   "currency": "GBP",
+   "symbol": "£",
+   "locale": "en-GB",
+   "units": "uk",
+   "languages": [
+    "en"
+   ],
+   "seasons": {
+    "spring": [
+     2,
+     3,
+     4
+    ],
+    "autumn": [
+     9,
+     10,
+     11
+    ]
+   },
+   "price_unit": "tonne",
+   "crops": [
+    "wheat",
+    "barley",
+    "canola",
+    "potato",
+    "sugar_beet",
+    "field_beans",
+    "pea",
+    "oats",
+    "rye",
+    "maize",
+    "ryegrass",
+    "onion",
+    "carrot",
+    "cabbage",
+    "cauliflower",
+    "spinach",
+    "lentil"
+   ],
+   "prices_t": {
+    "wheat": 185,
+    "barley": 165,
+    "canola": 410,
+    "potato": 260,
+    "sugar_beet": 40,
+    "field_beans": 235,
+    "pea": 260,
+    "oats": 175,
+    "rye": 170,
+    "maize": 175,
+    "ryegrass": 45,
+    "onion": 320,
+    "carrot": 210,
+    "cabbage": 280,
+    "cauliflower": 650,
+    "spinach": 900,
+    "lentil": 600
+   },
+   "costs_ha": {
+    "wheat": 1350,
+    "barley": 1150,
+    "canola": 1250,
+    "potato": 7200,
+    "sugar_beet": 2300,
+    "field_beans": 850,
+    "pea": 950,
+    "oats": 950,
+    "rye": 950,
+    "maize": 1400,
+    "ryegrass": 700,
+    "onion": 6500,
+    "carrot": 6000,
+    "cabbage": 6500,
+    "cauliflower": 7000,
+    "spinach": 5000,
+    "lentil": 800
+   },
+   "yield_potential": {
+    "wheat": 9.5,
+    "barley": 7.5,
+    "canola": 4.0,
+    "potato": 50.0,
+    "sugar_beet": 85.0,
+    "field_beans": 4.5,
+    "pea": 4.2,
+    "oats": 7.0,
+    "rye": 7.0,
+    "maize": 45.0,
+    "ryegrass": 12.0,
+    "onion": 55.0,
+    "carrot": 70.0,
+    "cabbage": 55.0,
+    "cauliflower": 30.0,
+    "spinach": 15.0,
+    "lentil": 2.2
+   },
+   "sources": [
+    "AHDB market prices, 2025",
+    "John Nix Farm Management Pocketbook",
+    "AHDB Recommended Lists"
+   ],
+   "sowing": {
+    "wheat": [
+     9,
+     10,
+     3
+    ],
+    "barley": [
+     9,
+     10,
+     2,
+     3
+    ],
+    "canola": [
+     8,
+     9
+    ],
+    "potato": [
+     3,
+     4
+    ],
+    "sugar_beet": [
+     3,
+     4
+    ],
+    "field_beans": [
+     10,
+     11,
+     2,
+     3
+    ],
+    "pea": [
+     3,
+     4
+    ],
+    "oats": [
+     9,
+     10,
+     3
+    ],
+    "rye": [
+     9,
+     10
+    ],
+    "maize": [
+     4,
+     5
+    ],
+    "ryegrass": [
+     4,
+     8
+    ],
+    "onion": [
+     3,
+     4
+    ],
+    "carrot": [
+     3,
+     4,
+     5
+    ],
+    "cabbage": [
+     4,
+     5,
+     6
+    ],
+    "cauliflower": [
+     4,
+     5,
+     6,
+     7
+    ],
+    "spinach": [
+     3,
+     4,
+     8,
+     9
+    ],
+    "lentil": [
+     3,
+     4
+    ]
+   }
+  },
+  "EU": {
+   "name": "European Union",
+   "currency": "EUR",
+   "symbol": "€",
+   "locale": "de-DE",
+   "units": "metric",
+   "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it"
+   ],
+   "seasons": {
+    "spring": [
+     2,
+     3,
+     4
+    ],
+    "summer": [
+     5,
+     6
+    ],
+    "autumn": [
+     9,
+     10,
+     11
+    ]
+   },
+   "price_unit": "tonne",
+   "crops": [
+    "wheat",
+    "barley",
+    "maize",
+    "canola",
+    "sunflower",
+    "soybean",
+    "sugar_beet",
+    "potato",
+    "oats",
+    "rye",
+    "pea",
+    "field_beans",
+    "lentil",
+    "chickpea",
+    "rice",
+    "tomato",
+    "onion",
+    "alfalfa",
+    "ryegrass",
+    "cotton",
+    "jowar",
+    "carrot",
+    "cabbage",
+    "cauliflower",
+    "spinach"
+   ],
+   "prices_t": {
+    "wheat": 215,
+    "barley": 190,
+    "maize": 205,
+    "canola": 455,
+    "sunflower": 440,
+    "soybean": 420,
+    "sugar_beet": 45,
+    "potato": 240,
+    "oats": 200,
+    "rye": 185,
+    "pea": 280,
+    "field_beans": 260,
+    "lentil": 700,
+    "chickpea": 720,
+    "rice": 360,
+    "tomato": 120,
+    "onion": 330,
+    "alfalfa": 180,
+    "ryegrass": 50,
+    "cotton": 1500,
+    "jowar": 190,
+    "carrot": 220,
+    "cabbage": 260,
+    "cauliflower": 600,
+    "spinach": 850
+   },
+   "costs_ha": {
+    "wheat": 1250,
+    "barley": 1050,
+    "maize": 1500,
+    "canola": 1200,
+    "sunflower": 900,
+    "soybean": 950,
+    "sugar_beet": 2200,
+    "potato": 6500,
+    "oats": 850,
+    "rye": 850,
+    "pea": 900,
+    "field_beans": 850,
+    "lentil": 800,
+    "chickpea": 850,
+    "rice": 2800,
+    "tomato": 11000,
+    "onion": 6000,
+    "alfalfa": 1100,
+    "ryegrass": 650,
+    "cotton": 2200,
+    "jowar": 900,
+    "carrot": 5500,
+    "cabbage": 6000,
+    "cauliflower": 6500,
+    "spinach": 4500
+   },
+   "yield_potential": {
+    "wheat": 8.5,
+    "barley": 7.0,
+    "maize": 11.0,
+    "canola": 3.8,
+    "sunflower": 3.0,
+    "soybean": 3.6,
+    "sugar_beet": 80.0,
+    "potato": 48.0,
+    "oats": 6.0,
+    "rye": 6.5,
+    "pea": 4.0,
+    "field_beans": 4.2,
+    "lentil": 2.0,
+    "chickpea": 2.2,
+    "rice": 7.5,
+    "tomato": 85.0,
+    "onion": 55.0,
+    "alfalfa": 15.0,
+    "ryegrass": 12.0,
+    "cotton": 3.2,
+    "jowar": 6.0,
+    "carrot": 65.0,
+    "cabbage": 55.0,
+    "cauliflower": 28.0,
+    "spinach": 15.0
+   },
+   "sources": [
+    "Eurostat agricultural prices, 2025",
+    "FADN cost structures",
+    "national extension budgets (Arvalis, KTBL)"
+   ],
+   "sowing": {
+    "wheat": [
+     9,
+     10,
+     11,
+     3
+    ],
+    "barley": [
+     9,
+     10,
+     2,
+     3
+    ],
+    "maize": [
+     4,
+     5
+    ],
+    "canola": [
+     8,
+     9
+    ],
+    "sunflower": [
+     4,
+     5
+    ],
+    "soybean": [
+     4,
+     5
+    ],
+    "sugar_beet": [
+     3,
+     4
+    ],
+    "potato": [
+     3,
+     4
+    ],
+    "oats": [
+     9,
+     10,
+     3
+    ],
+    "rye": [
+     9,
+     10
+    ],
+    "pea": [
+     2,
+     3,
+     11
+    ],
+    "field_beans": [
+     10,
+     11,
+     2,
+     3
+    ],
+    "lentil": [
+     3,
+     4
+    ],
+    "chickpea": [
+     3,
+     4,
+     11
+    ],
+    "rice": [
+     4,
+     5
+    ],
+    "tomato": [
+     4,
+     5
+    ],
+    "onion": [
+     3,
+     4,
+     10
+    ],
+    "alfalfa": [
+     3,
+     4,
+     8,
+     9
+    ],
+    "ryegrass": [
+     3,
+     4,
+     8,
+     9
+    ],
+    "cotton": [
+     4,
+     5
+    ],
+    "jowar": [
+     5,
+     6
+    ],
+    "carrot": [
+     3,
+     4,
+     5
+    ],
+    "cabbage": [
+     4,
+     5,
+     6
+    ],
+    "cauliflower": [
+     4,
+     5,
+     6,
+     7
+    ],
+    "spinach": [
+     3,
+     4,
+     8,
+     9
+    ]
+   }
+  },
+  "WORLD": {
+   "name": "Rest of world",
+   "currency": "USD",
+   "symbol": "$",
+   "locale": "en",
+   "units": "metric",
+   "languages": [
+    "en",
+    "es",
+    "fr"
+   ],
+   "seasons": {
+    "spring": [
+     2,
+     3,
+     4
+    ],
+    "summer": [
+     5,
+     6,
+     7
+    ],
+    "autumn": [
+     9,
+     10,
+     11
+    ]
+   },
+   "price_unit": "tonne",
+   "crops": [
+    "rice",
+    "wheat",
+    "maize",
+    "soybean",
+    "jowar",
+    "bajra",
+    "barley",
+    "chickpea",
+    "lentil",
+    "pea",
+    "groundnut",
+    "canola",
+    "sunflower",
+    "cotton",
+    "sugarcane",
+    "potato",
+    "onion",
+    "tomato",
+    "cabbage",
+    "carrot",
+    "alfalfa",
+    "dry_beans",
+    "oats",
+    "sugar_beet"
+   ],
+   "prices_t": {
+    "rice": 340,
+    "wheat": 230,
+    "maize": 200,
+    "soybean": 410,
+    "jowar": 190,
+    "bajra": 250,
+    "barley": 200,
+    "chickpea": 700,
+    "lentil": 650,
+    "pea": 300,
+    "groundnut": 900,
+    "canola": 460,
+    "sunflower": 450,
+    "cotton": 1500,
+    "sugarcane": 40,
+    "potato": 250,
+    "onion": 350,
+    "tomato": 300,
+    "cabbage": 250,
+    "carrot": 250,
+    "alfalfa": 190,
+    "dry_beans": 800,
+    "oats": 220,
+    "sugar_beet": 45
+   },
+   "costs_ha": {
+    "rice": 1200,
+    "wheat": 800,
+    "maize": 900,
+    "soybean": 700,
+    "jowar": 500,
+    "bajra": 400,
+    "barley": 650,
+    "chickpea": 600,
+    "lentil": 550,
+    "pea": 650,
+    "groundnut": 900,
+    "canola": 800,
+    "sunflower": 650,
+    "cotton": 1400,
+    "sugarcane": 2500,
+    "potato": 4000,
+    "onion": 3500,
+    "tomato": 5000,
+    "cabbage": 3500,
+    "carrot": 3500,
+    "alfalfa": 900,
+    "dry_beans": 900,
+    "oats": 600,
+    "sugar_beet": 1800
+   },
+   "sources": [
+    "World Bank Commodity Price Data (Pink Sheet), 2025",
+    "FAOSTAT producer prices"
+   ],
+   "sowing": {}
+  }
+ }
+}
